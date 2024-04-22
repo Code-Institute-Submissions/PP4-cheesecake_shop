@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,11 +22,11 @@
     <!-- Favicon -->
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 
 </head>
 
-<body>
+<body class="d-flex flex-column h-100 main-bg background-pattern">
 
     <!-- Nav-bar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
@@ -41,32 +42,32 @@
                         <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                        <a class="nav-link" href="{}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'menu:menu' %}">Menu</a>
+                        <a class="nav-link" href="{}">Menu</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'reservation_booking' %}">Book here!</a>
+                        <a class="nav-link" href="{}">Book here!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contacts' %}">Contacts</a>
+                        <a class="nav-link" href="{}">Contacts</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'booking_list' %}">My Bookings</a>
+                        <a class="nav-link" href="{}">My Bookings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link" href="{}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link" href="{}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -130,7 +131,7 @@
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/58d92d93b9.js" crossorigin="anonymous"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+    
 
 </body>
 

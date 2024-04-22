@@ -1,0 +1,86 @@
+/*------ Global Settings ------*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: grey
+}
+
+p {
+    margin-bottom: 0.4em;
+}
+
+.background-pattern {
+    background-image: url(/static/images/background.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    z-index: -1;
+}
+
+.btn {
+    font-size: 1em;
+}
+
+.message-container__message--text {
+    background-color: #B8C4BB;
+    text-align: center;
+    margin: 0;
+}
+
+/*------ Body ------*/
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*------ Navbar ------*/
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+.hero-image {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: grey
+}
+
+.coloured-navbar-content .navbar-toggler .navbar-toggler-icon {
+    color: black;
+}
+
+/*------ Footer ------*/
+
+.footer .footer-icons a:hover {
+    color: grey
+}
+
+.footer .footer-icons a {
+    font-size: 2em;
+    line-height: 1.5em;
+    color: black;
+    margin-right: 10px;
+}
