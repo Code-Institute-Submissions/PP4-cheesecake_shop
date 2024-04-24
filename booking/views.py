@@ -6,7 +6,6 @@ from django.views.generic.edit import CreateView
 #def home_view(request):
 #   return render(request,'booking/index.html')
     
-
 class Home(generic.DetailView):
     """
     Renders the Index page in the browser
