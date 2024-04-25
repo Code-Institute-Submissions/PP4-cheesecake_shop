@@ -34,7 +34,10 @@ DEBUG = False
 ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu110.gitpod.io'
                 ,'.herokuapp.com']
 
-
+CSRF_TRUSTED_ORIGIN = [
+    "https://*.gitpod.io",
+    "https://*.herokuapp.com"
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -125,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
