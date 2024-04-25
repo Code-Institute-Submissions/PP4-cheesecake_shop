@@ -34,10 +34,13 @@ DEBUG = False
 ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu110.gitpod.io'
                 ,'.herokuapp.com']
 
-CSRF_TRUSTED_ORIGIN = [
+
+CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
     "https://*.herokuapp.com"
 ]
+
+
 # Application definition
 
 INSTALLED_APPS = [
