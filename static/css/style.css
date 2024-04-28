@@ -19,11 +19,8 @@ p {
 }
 
 .background-pattern {
-    background-image: url(/static/images/background.png);
-    background-size: cover;
-    background-repeat: repeat;
-    width: 100%;
-    z-index: -1;
+    background-color: #FDF8F0;
+
 }
 
 .btn {
@@ -47,16 +44,16 @@ body {
 /*------ Navbar ------*/
 
 .nav-link {
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 .hero-image {
-    background-image: url(/static/images/background.jpeg);
+    background-image: url(/static/images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 80%;
-    height: 95vh;
+    width: 100%;
+    height: 40vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
