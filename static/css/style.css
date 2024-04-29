@@ -77,7 +77,10 @@ body {
 
 .footer .footer-icons a {
     font-size: 2em;
-    line-height: 1.5em;
-    color: black;
+    line-height: 2em;
     margin-right: 10px;
+}
+
+.copy-right {
+    font-size: 2em;
 }
