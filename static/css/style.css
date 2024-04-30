@@ -1,5 +1,12 @@
 /*------ Global Settings ------*/
 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #FDF8F0;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,8 +26,11 @@ p {
 }
 
 .background-pattern {
-    background-color: url(#);
-
+    background-image: url(/static/images/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    z-index: -1;
 }
 
 .btn {
@@ -48,7 +58,7 @@ body {
 }
 
 .hero-image {
-    background-image: url(/static/images/bg.png);
+    background-image: url(/static/images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,4 +93,18 @@ body {
 
 .copy-right {
     font-size: 2em;
+}
+
+/*------ Sign up ------*/
+
+.btn-signup,
+.btn-edit {
+    background-color: #323232;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #323232;
 }
