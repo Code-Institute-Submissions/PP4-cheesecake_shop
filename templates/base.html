@@ -24,6 +24,7 @@
     </script>
 
     <!-- Favicon -->
+    <link rel="icon" href="/static/images/favicon.png" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/7b8f7af581.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -35,8 +36,10 @@
 
     <!-- Nav-bar -->
     <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #FDF8F0;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><strong><span class="red-c">Cheesecake Shop</strong></a>
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="logo" aria-label="Go to the home page">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
