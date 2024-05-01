@@ -36,9 +36,9 @@
 
     <!-- Nav-bar -->
     <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #FDF8F0;">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/logo.png' %}" alt="logo" aria-label="Go to the home page">
+                <img src="{% static 'images/logo.png' %}" style="height: 30px;" alt="logo" aria-label="Go to the home page">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,9 +60,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{}">Book here!</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{}">Contacts</a>
-                    </li>
+                    
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{}">My Bookings</a>
@@ -117,7 +115,14 @@
                     <p>Email: info@cheesecakeshop.ie</p>
                 </div>
 
-                <!-- Middle Column: Social Media Links -->
+                 <!-- Middle Column: Opening Time -->
+                 <div class="col-md-4 text-center text-white">
+                    <h5><strong>Opening Hours</strong></h5>
+                    <p>Tuesday - Sunday: </p>
+                    <p>12.00am - 8.00pm</p>                   
+                 </div>
+                
+                <!--  Right Column: Social Media Links -->
                 <div class="col-md-4 text-center">
                     <div class="d-flex flex-row justify-content-center m-3 footer-icons">
                         <a href="https://github.com/EdsonSMartins/PP4-cheesecake_shop" target="_blank" rel="noopener"
@@ -130,16 +135,11 @@
                         </a>                                             
                     </div>
                     <div class="copy-right">                        
-                        <p class="mt-3 mb-1 text-center text-white fs-6 text lh-1">© 2024 Edson Martins</p>
+                        <p class="mt-3 mb-1 text-center text-white lh-1">© 2024 Edson Martins</p>
                     </div>
                 </div>
 
-                 <!-- Right Column: Opening Time -->
-                <div class="col-md-4 text-center text-white">
-                   <h5><strong>Opening Hours</strong></h5>
-                   <p>Tuesday - Sunday: </p>
-                   <p>12.00am - 8.00pm</p>                   
-                </div>
+                
             </div>
         </div>
     </footer>
