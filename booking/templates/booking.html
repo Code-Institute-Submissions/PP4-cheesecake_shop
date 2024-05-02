@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="col-md-3 mx-auto mt-3">
+    <h4>Make a Reservation</h4>
+    <form method="post" action="{% url 'booking' %}">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="{{ form.num_of_guests.id_for_label }}">{{ form.num_of_guests.label }}</label>
+            <br>
+            {{ form.num_of_guests }}
+        </div>
+
+        <p>For parties larger than 10 people, please contact the restaurant directly to make a reservation.</p>
+
+        <div class="mb-3">
+            <label for="{{ form.date_of_booking.id_for_label }}">{{ form.date_of_booking.label }}</label>
+            <br>
+            {{ form.date_of_booking }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.time_of_booking.id_for_label }}">{{ form.time_of_booking.label }}</label>
+            <br>
+            {{ form.time_of_booking }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.notes.id_for_label }}">{{ form.notes.label }}</label>
+            <br>
+            {{ form.notes }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.full_name.id_for_label }}">{{ form.full_name.label }}</label>
+            <br>
+            {{ form.full_name }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.occasion.id_for_label }}">{{ form.occasion.label }}</label>
+            <br>
+            {{ form.nick_name }}
+        </div>
+
+    <button class="btn btn-success mb-3 btn-lg" type="submit">Book Now</button>
+    </form>
+</div>
+
+{% endblock %}

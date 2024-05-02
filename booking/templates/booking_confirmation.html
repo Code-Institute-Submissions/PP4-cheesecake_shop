@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container background-image">
+    <div class="confirmation col-md-3 mx-auto mt-3">
+        <h4>Booking Confirmation</h4>
+        <p>Thank you for booking with us. Your reservation is confirmed.</p>
+        <p>What would you like to do next?</p>
+        <br>
+        <p><strong><a class="link" href="{% url 'menu' %}">Check the Menu</a></strong></p>
+        <p><strong><a class="link" href="{% url 'bookings_list' %}">See Your Bookings</a></strong></p>        
+    </div>
+</div>
+{% endblock %}

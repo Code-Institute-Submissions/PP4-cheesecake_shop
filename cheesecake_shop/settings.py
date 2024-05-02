@@ -26,13 +26,13 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8!hd#$^93gg2g3-kq28f4w05l=d)$21^ygl^(6e=*%4-3$)4v6'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get("DEBUG") == "True"
 
-ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu112.gitpod.io'
-                ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu112.gitpod.io',
+                '.herokuapp.com', "localhost"]
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -65,7 +65,7 @@ INSTALLED_APPS = [
 # allauth
 SITE_ID = 1
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
-ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_USERNAME_MIN_LENGTH = 5
