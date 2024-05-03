@@ -1,0 +1,142 @@
+{% extends "base.html" %} 
+
+{% block extra_title %}- Menu{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Menu</h2>
+    
+            <div class="menu-navigation" aria-label="buttons for navigation">
+                <button onclick="scrollToCategory('cheesecakes')">Cheesecakes</button>
+                <button onclick="scrollToCategory('cakes')">Cakes</button>
+                <button onclick="scrollToCategory('drinks')">Drinks</button>
+            </div>
+
+            <div class="menu-category" aria-labelledby="cheesecakes">
+                <h4 class="category" id="cheesecakes">Appetizers</h4>
+                <ul>
+                    
+                    <li class="menu-item" aria-label="butternut squash soup">
+                        <div>
+                            <span>Roasted Butternut Squash Soup Shots</span>
+                            <p class="menu-description">Small servings of creamy butternut squash soup with a hint of roasted garlic.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€4.50">€4.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="spicy bean and corn salsa">
+                        <div>
+                            <span>Spicy Bean and Corn Salsa</span>
+                            <p class="menu-description">A zesty soup-inspired salsa with black beans, corn, tomatoes, and a kick of spice, served with tortilla chips.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€6.00">€6.00</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="chilled cucumber avocado soup">
+                        <div>
+                            <span>Chilled Cucumber Avocado Soup</span>
+                            <p class="menu-description">Refreshing cucumber and creamy avocado blended into a chilled soup, garnished with a touch of dill.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€5.50">€5.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="mushroom and barley stuffed phyllo cups">
+                        <div>
+                            <span>Mushroom and Barley Stuffed Phyllo Cups</span>
+                            <p class="menu-description">Mini phyllo cups filled with a savory mix of mushroom and barley soup, topped with a crispy layer.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.00">€7.00</span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="menu-category" aria-labelledby="cakes">
+                <h4 class="category" id="cakes">Main Courses</h4>
+                <ul>
+                    
+                    <li class="menu-item" aria-label="chicken and wild rice soup">
+                        <div>
+                            <span>Chicken and Wild Rice Soup</span>
+                            <p class="menu-description">Hearty soup with tender chicken, wild rice, and a medley of vegetables in a flavorful broth.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€9.50">€9.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="lentil and vegetable stew">
+                        <div>
+                            <span>Lentil and Vegetable Stew</span>
+                            <p class="menu-description">A robust stew featuring lentils, carrots, potatoes, and spinach in a spiced broth.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€8.50">€8.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="thai coconut curry noodle soup">
+                        <div>
+                            <span>Thai Coconut Curry Noodle Soup</span>
+                            <p class="menu-description">A fusion of Thai flavors with coconut milk, curry, rice noodles, and a variety of colorful vegetables.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€10.50">€10.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="seafood chowder">
+                        <div>
+                            <span>Seafood Chowder</span>
+                            <p class="menu-description">Rich and creamy chowder loaded with a mix of seafood, potatoes, and corn.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€12.00">€12.00</span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="menu-category" aria-labelledby="drinks">
+                <h4 class="category" id="drinks">Desserts</h4>
+                <ul>
+                    
+                    <li class="menu-item" aria-label="citrus sorbet with mint syrup">
+                        <div>
+                            <span>Citrus Sorbet with Mint Syrup</span>
+                            <p class="menu-description">Refreshing citrus sorbet drizzled with a homemade mint-infused syrup.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€4.00">€4.00</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="berry gazpacho parfait">
+                        <div>
+                            <span>Berry Gazpacho Parfait</span>
+                            <p class="menu-description">A sweet twist on the classic gazpacho, featuring layers of mixed berry puree and vanilla yogurt.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€6.50">€6.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="pumpkin pie soup shooters">
+                        <div>
+                            <span>Pumpkin Pie Soup Shooters</span>
+                            <p class="menu-description">Creamy pumpkin soup with a touch of sweetness, served in small shooter glasses.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€5.00">€5.00</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="chocolate mocha pudding cups">
+                        <div>
+                            <span>Chocolate Mocha Pudding Cups</span>
+                            <p class="menu-description">Silky chocolate-mocha pudding topped with whipped cream and chocolate shavings.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.50">€7.50</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function scrollToCategory(categoryId) {
+        const element = document.getElementById(categoryId);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+{%endblock%}
