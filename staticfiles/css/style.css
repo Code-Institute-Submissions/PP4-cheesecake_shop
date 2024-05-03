@@ -120,9 +120,13 @@ body {
     margin-top: 20px;
 }
 
-.menu-category .category {
+.menu-category .category  {
     padding-left: 33px;
     font-weight: bold;
+}
+
+.alert {
+    padding-left: 33px;
 }
 
 .menu-item span {
