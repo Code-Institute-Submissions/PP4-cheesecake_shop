@@ -23,7 +23,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('', include('shop.urls')),     
+    path('booking_reservation/', include('booking_reservation.urls')),
+    path('my-booking/', include('bookings.urls')),    
+    path('accounts/', include('allauth.urls')),
+    path('summernote/', include('django_summernote.urls')),    
       
 ]
 
