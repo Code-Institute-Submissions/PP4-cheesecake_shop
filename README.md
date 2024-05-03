@@ -1,5 +1,5 @@
 # The Cheesecake Company 
-![mockup](amiresponsive.png)
+![mockup]()
 
 Cheesecake Company is a website built in Django using Python, JavaScript, CSS and HTML. Built with a user-centered approach. It main purpose is to enable users to create, control and cancel bookings and orders while the admin can change, update and delete the same information from the backend.
  
@@ -130,6 +130,7 @@ Content Moderation and Review involve features for administrators to monitor and
 ## **Skeleton Plane**
 
 ### **Wireframes**
+
 ### **Database Schema**
 
 ## **Surface Plane**
@@ -429,4 +430,4 @@ Extra help I've used for this project, please see links below.
 
 # **Acknowledgements**
 
-I would like to express my gratitude to my Code Institute mentor and the CI Tutor team,  for guidance and clear advice to build this project.
+I would like to express my gratitude to my Code Institute mentor Adeye Adegbenga and the CI Tutor team, for guidance and clear advice to build this project.

@@ -101,6 +101,31 @@ body {
 
 /*------ Sign up ------*/
 
+.sign-up h1 {
+    font-size: 20px;
+}
+
+.sign-up p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sign-up a {
+    text-decoration: none;
+}
+
+.sign-up label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.sign-up input {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+}
+
 .btn-signup,
 .btn-edit {
     background-color: #323232;
@@ -109,6 +134,47 @@ body {
 
 .btn-signup:hover,
 .btn-signup:active {
+    background-color: #fff;
+    color: #323232;
+}
+
+/*------ Sign in ------*/
+
+.log-in h1 {
+    font-size: 20px;
+}
+
+.log-in p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.log-in a {
+    text-decoration: none;
+}
+
+.log-in label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.log-in input {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.log-in button {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+    background-color: #323232;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.log-in button:hover {
     background-color: #fff;
     color: #323232;
 }
@@ -185,3 +251,185 @@ body {
     border-bottom: none;
     /* Remove border for the last item */
 }
+
+/* Booking form */
+
+.form-group {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.booking-form input {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.booking-form textarea {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.booking-form select {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.book-table {
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.book-table:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+}
+
+/* Booking confirmation */
+
+.confirmation-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.p-text {
+    font-weight: 600;
+    margin: 15px;
+    padding-bottom: 5px;
+}
+
+.confirmation {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* POP-up message */
+
+.hide {
+    display: none;
+}
+
+#msg {
+    margin-top: 60px;
+}
+
+/* Edit booking */
+
+.edit-form h1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+.edit-form input {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.edit-form label {
+    font-weight: 600;
+}
+
+.edit-form textarea {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.edit-form select {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.btns {
+    margin: 10px;
+}
+
+.edit-btn {
+    border: 1px solid black;
+    background: white;
+}
+
+.edit-btn:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+}
+
+.edit-cancel-btn {
+    font-size: 12px;
+    border: 1px solid black;
+    background: white;
+}
+
+.cancel-btn a {
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.cancel-btn a:hover,
+.edit-cancel-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Delete booking */
+
+.card {
+    background: #FDF8F0;
+}
+
+.delete h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.delete h2 {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.delete hr {
+    margin-bottom: 5px;
+}
+
+.delete p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 0.5;
+    font-weight: 300;
+}
+
+.delete-btn {
+    font-size: 12px;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
+.delete-btn:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+}
+
+.delete-cancel-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.delete-cancel-btn {
+    font-size: 12px;
+    border: 1px solid black;
+    background: floralwhite;
+}
+
