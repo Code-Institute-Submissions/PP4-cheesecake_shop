@@ -53,7 +53,7 @@ class Booking(models.Model):
     time_of_booking = models.IntegerField(choices=TIME_SLOTS, default=0)
     notes = models.TextField(blank=True, null=True)
     full_name = models.CharField(max_length=100)
-    nick_name = models.CharField(
+    occasion = models.CharField(
             max_length=50,
             unique=True,
             blank=True,

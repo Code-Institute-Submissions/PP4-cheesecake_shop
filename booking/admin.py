@@ -13,7 +13,7 @@ class BookingAdmin(admin.ModelAdmin):
         'date_of_booking',
         'time_of_booking',
         'full_name',
-        'nick_name',
+        'occasion',
         'num_of_guests',
         'notes'
     )
