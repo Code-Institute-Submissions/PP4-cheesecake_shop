@@ -112,3 +112,72 @@ body {
     background-color: #fff;
     color: #323232;
 }
+
+/*------ Menu Page ------*/
+
+.menu-category {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.menu-category .category {
+    padding-left: 33px;
+    font-weight: bold;
+}
+
+.menu-item span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.menu-description,
+.menu-item .menu-price {
+    font-size: 1.2em;
+}
+
+.menu-price {
+    font-weight: bold;
+}
+
+.menu-category hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.menu-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-navigation button {
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: rgb(232, 247, 238);
+    padding: 8px 15px;
+    border: 3px solid #B8C4BB;
+    cursor: pointer;
+}
+
+.container .menu-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-item {
+    list-style: none;
+    /* Remove bullets */
+    display: flex;
+    justify-content: space-between;
+    /* Align name and price */
+    border-bottom: 2px solid #ddd;
+    /* Add a border to create separation */
+    margin-bottom: 5px;
+    /* Adjust the margin for spacing */
+    padding-bottom: 10px;
+    /* Adjust padding for spacing */
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    /* Remove border for the last item */
+}

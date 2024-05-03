@@ -1,4 +1,5 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
+{% load static %} 
 
 {% block extra_title %}- Menu{% endblock %}
 
@@ -8,20 +9,21 @@
         <div class="col-md-12">
             <h2 class="text-center mb-4">Menu</h2>
     
-            <div class="menu-navigation" aria-label="buttons for navigation">
+            <div class="menu-navigation text-center mb-4" aria-label="buttons for navigation">
                 <button onclick="scrollToCategory('cheesecakes')">Cheesecakes</button>
                 <button onclick="scrollToCategory('cakes')">Cakes</button>
                 <button onclick="scrollToCategory('drinks')">Drinks</button>
             </div>
-
-            <div class="menu-category" aria-labelledby="cheesecakes">
-                <h4 class="category" id="cheesecakes">Appetizers</h4>
+            <br>
+            <div class="menu-category" aria-labelledby="cheesecakes">            
+                <h4 class="category" id="cheesecakes">Cheesecakes</h4>
+                <h7>*Prices per slice</h7>               
                 <ul>
                     
                     <li class="menu-item" aria-label="butternut squash soup">
                         <div>
-                            <span>Roasted Butternut Squash Soup Shots</span>
-                            <p class="menu-description">Small servings of creamy butternut squash soup with a hint of roasted garlic.</p>
+                            <span>Forest Berry</span>
+                            <p class="menu-description">red fruit syrup with white wine, blackberries, strawberries, blueberries and raspberries.</p>
                         </div>
                         <span class="menu-price" aria-label="€4.50">€4.50</span>
                     </li>
