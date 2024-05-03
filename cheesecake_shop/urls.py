@@ -30,6 +30,4 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
 ]
 
-# ... your other URL patterns ...
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
  
