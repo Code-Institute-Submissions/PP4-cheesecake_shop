@@ -1,110 +1,432 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Cheesecake Company 
+![mockup](amiresponsive.png)
 
-Welcome EdsonSMartins,
+Cheesecake Company is a website built in Django using Python, JavaScript, CSS and HTML. Built with a user-centered approach. It main purpose is to enable users to create, control and cancel bookings and orders while the admin can change, update and delete the same information from the backend.
+ 
+<hr>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The live deployed application can be found deployed on [Heroku](https://pp4-cheesecake-c25e3fb56709.herokuapp.com/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The link to my Github repository's [Github Repo](https://github.com/EdsonSMartins/PP4-cheesecake-order-app).
 
-## Gitpod Reminders
+<hr>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# **Table of Contents**
 
-`python3 -m http.server`
+<!-- TOC -->
+* [**The Cheesecake Company**](#the-cheesecake-company)
+* [**Table of Contents**](#table-of-contents)
+* [**Planning**](#planning)
+  * [**Strategy Plane**](#strategy-plane)
+    * [**Target Audience**](#target-audience)
+    * [**Site Goals**](#site-goals)
+  * [**Scope Plane**](#scope-plane)
+    * [**Scope Plane**](#scope-plane)
+    * [**Necessary Features:**](#necessary-features)
+    * [**Nice-to-have Features:**](#nice-to-have-features)
+  * [**Structure Plane**](#structure-plane) 
+    * [**Epic: User Authentication**](#epic-user-authentication)
+    * [**Epic: Bookings**](#epic-bookings)
+    * [**Epic: Collection orders**](#epic-collections-order)
+    * [**Epic: Content Moderation and Review**](#epic-content-moderation-and-review)    
+  * [**Skeleton Plane**](#skeleton-plane)
+    * [**Wireframes**](#wireframes)
+    * [**Database Schema**](#database-schema)
+  * [**Surface Plane**](#surface-plane)
+    * [**Design**](#design)
+    * [**Colors and Fonts**](#colors-and-fonts)
+    * [**Logo**](#logo)
+  * [**Features**](#features)
+  * [**Future Enhancements**](#future-enhancements)
+  * [**Agile:**](#agile)
+  * [**Deployment**](#deployment)
+  * [**Credits**](#credits)
+  * [**Acknowledgements**](#acknowledgements)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# **Planning**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The planning phase was structured using the 5 UX planes - strategy, scope, structure, skeleton, and surface.
 
-A blue button should appear to click: _Make Public_,
+## **Strategy Plane**
 
-Another blue button should appear to click: _Open Browser_.
+The initial idea for this project was to create an ordering application for my friend’s food business in order to facilitate customers to order online as the venue has a limited number of seats. It turns out that an online booking system could also assist to manage customer expectations.  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### **Target Audience**
 
-To log into the Heroku toolbelt CLI:
+- Business owner
+- Users: current users, new users that are not registered, food enthusiasts 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### **Site Goals**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Create an easy-to-use booking and ordering system.
+- Make the application responsive, so it can be used on desktop, tablet and mobile screen sizes.
 
-------
 
-## Release History
+## **Scope Plane**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+To get a better understanding of what the application will look like I have listed the features and sorted them into necessary and nice-to-have features.
 
-**September 20 2023:** Update Python version to 3.9.17.
+### **Necessary Features:**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- User can log in to the application.
+- User can register to the application.
+- Orders/Booking can be added, updated and deleted.
+- Menu.
+- About - opening hours, address for collection and contact details.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### **Nice-to-have Features:**
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- customer reviews.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## **Structure Plane**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**EPIC: User Authentication:**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+This epic focuses on the foundational aspects of user management and authentication, ensuring users can securely access the platform. It includes functionalities such as logging in, logging out, password reset and user registration.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+| User Story                                                                                                                              | Priority       |
+|-----------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| As a **new user**, I want to **register and establish an account on the site**, so that I can **create a personalised profile**.        | **MUST HAVE**  |
+| As a **registered user**, I want to **log in to my account**, so that I can **access my bookings/orders**.                              | **MUST HAVE**  |
+| As a **site owner**, I want to **manage user roles**, so that I can **choose who can access sensitive information.**.                         | **COULD HAVE** |
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**EPIC: Bookings:**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+This epic encompasses the management of bookings. Users can view and interact with the booking panel in order to view, make new booking, edit and delete their bookings.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+| User Story                                                                                                                              | Priority       |
+|-----------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| As a **Site User/Admin**, I want to **access the booking form**, so that I can **initiate a table reservation**.                        | **MUST HAVE**  |
+| As an **Admin**, I want to **view a list of all scheduled bookings**, so that I can **keep track and manage bookings acceptance/rejection.** | **MUST HAVE**  |
+| As a **Site User**, I want to **update a reservation/booking**, so that I can **cancel or apply changes if needed.**                    | **MUST HAVE**  |
+| As a **Site User**, I want to **delete a reservation/booking**, so that I can **manage my bookings and keep it up to date.**            | **MUST HAVE**  |
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+**EPIC: Collection orders:**
 
-## FAQ about the uptime script
+This epic encompasses the management of collection orders. Users can view and interact with the ordering panel in order to view, create, edit and delete their orders.
 
-**Why have you added this script?**
+| User Story                                                                                                                              | Priority       |
+|-----------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| As a **site user**, I want to **create orders**, so that I can **have a new order created**.                                            | **SHOULD HAVE**  |
+| As a **site user**, I want to **view a list of my orders**, so that I can **keep track and manage my orders effectively**.              | **SHOULD HAVE**  |
+| As a **site user**, I want to **edit the details of my order**, so that I can **make necessary adjustments**.                           | **SHOULD HAVE**  |
+| As a **site user**, I want to **delete an order**, so that I can **I can remove unnecessary orders**.                                   | **SHOULD HAVE**  |
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+**EPIC: Content Moderation and Review**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Content Moderation and Review involve features for administrators to monitor and manage the content on the platform.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+| User Story                                                                                                                              | Priority       |
+|-----------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| As a **site admin**, I want to **delete/update/approve reviews and comments from any user**, so that I can **maintain the integrity of the platform**.   | **COULD HAVE**  |
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## **Skeleton Plane**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### **Wireframes**
+### **Database Schema**
 
-**Can I opt out?**
+## **Surface Plane**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### **Design**
+### **Colors and Fonts**
+I wanted to keep it simple and light. The color palette matches the cover image and is well suited color scheme for the full website.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+[Coolors.co](https://coolors.co/) was the website I've used to fetch the colour palette presented.
 
-**Anything more?**
+![Colour Palette](readme_img/coolors.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The Fonts used are [Roboto Serifs](https://fonts.google.com/specimen/Roboto+Serif?query=robot+ser) and [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montse).
 
----
+### **Logo**
+[LOGO](https://logo.com/) was the webstie I've used to created logo for this project.
 
-Happy coding!
+# **Features**
+
+### General features on each page
+
+The navigation menu and footer is continiously the same throughout all the pages of my website.
+
+
+### Home page
+
+<details>
+<summary>Click here!</summary>
+
+![Home Page](readme_files/features/home.png)
+
+</details>
+
+
+### Menu page
+
+<details>
+<summary>Click here!</summary>
+
+![Menu Page](readme_files/features/menu.png)
+
+
+</details>
+
+
+### Booking form page
+
+<details>
+<summary>Click here!</summary>
+
+![Form Page](readme_files/features/booking_form.png)
+
+</details>
+
+### Form Validation
+
+<details>
+<summary>Click here!</summary>
+
+![Form Validation](readme_img/form_validation/form_name_validation.png)
+![Form Validation](readme_img/form_validation/form_email_validation.png)
+![Form Validation](readme_img/form_validation/form_guest_num_validation.png)
+![Form Validation](readme_img/form_validation/form_date_time_validation.png)
+
+</details>
+
+### Booking confirmation page
+
+<details>
+<summary>Click here!</summary>
+
+![Confirmation Page](readme_img/features/booking_confirmation.png)
+
+</details>
+
+
+### Bookings list page
+
+<details>
+<summary>Click here!</summary>
+
+![Bookings Page](readme_img/features/empty_bookings.png)
+![Bookings Page](readme_img/features/bookings_list.png)
+
+</details>
+
+### Edit booking page
+
+<details>
+<summary>Click here!</summary>
+
+![Edit Page](readme_img/features/edit_booking.png)
+
+</details>
+
+### Delete booking page
+
+<details>
+<summary>Click here!</summary>
+
+![Delete Page](readme_img/features/delete_booking.png)
+
+</details>
+
+### Sign in page
+
+<details>
+<summary>Click here!</summary>
+
+![Sign in Page](readme_img/features/sign_in.png)
+
+</details>
+
+### Sign out page
+
+<details>
+<summary>Click here!</summary>
+
+![Sign out Page](readme_img/features/sign_out.png)
+
+</details>
+
+### Sign up page
+
+<details>
+<summary>Click here!</summary>
+
+![Sign up Page](readme_img/features/sign_up.png)
+
+</details>
+
+### Final look of the Error pages
+
+<details>
+<summary>Click here!</summary>
+
+![Error 404 Page](readme_img/features/error_404.png)
+![Error 500 Page](readme_img/features/error_500.png)
+
+</details>
+
+### Footer
+
+<details>
+<summary>Click here!</summary>
+
+![Footer](readme_img/features/footer.png)
+
+</details>
+
+### Success messages
+
+<details>
+<summary>Click here!</summary>
+
+![Booking success messages](readme_img/success_message/booking_success_message.png)
+![Sign in success messages](readme_img/success_message/sign_in_success_message.png)
+![Delete success messages](readme_img/success_message/delete_success_message.png)
+
+</details> <br>
+
+[Back to Contents](#table-of-contents)
+
+### Future Implementations
+
+A few user stories were excluded from the current project due to time limitations. They are visible in on the dedicated [GitHub Projects](https://github.com/users/Darioc18/projects/2) kanban board for this project. The following are some of features that could be implemented in future iterations and that have been added to the *future implementations* on the kanban board:
+
+[Back to Contents](#table-of-contents)
+
+# **Agile**
+
+GitHub Project Boards and Kanban are instrumental in collaborative project management. To check the project's board click [here](https://github.com/users/EdsonSMartins/projects/2/views/1)
+
+# **Testing**
+
+Please refer to the separate [TESTING.md](TESTING.md) file.
+
+# Technologies Used
+
+### **Languages**
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+[Back to contents](#contents)
+
+### Frameworks, Libraries & Programs Used
+
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)    
+- [jQuery](https://jquery.com/)   
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [Google fonts](https://fonts.google.com/)
+- [Coolors](https://coolors.co/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [amiresponsive](http://ami.responsivedesign.is/)
+- [JSHint](https://jshint.com/)
+- [Django](https://www.djangoproject.com/)
+
+
+[Back to contents](#contents)
+
+# **Deployment**
+
+Here is the [link to the deployed project](https://pp4-cheesecake-c25e3fb56709.herokuapp.com/).
+
+## **Create Repository**
+
+The first step is to create a new repository, using the [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template). After creating the repository, you can open it in the IDE of your choice.
+
+## **Project Setup**
+
+1. Install **Django** and **gunicorn**:
+   - `pip install django gunicorn`
+2. Install supporting **libraries**:
+   - `pip install dj_database_url psycopg2`
+3. Create **requirements.txt** file:
+   - `pip freeze --local > requirements.txt`
+4. Create a Django project:
+   - `django-admin startproject <name>` (in my case `<name>` was *cheesecake_shop*)
+5. Test to see if everything worked:
+   - `python manage.py runserver`
+   
+## **Database Setup**
+
+This project uses [ElephantSQL](https://customer.elephantsql.com/) for the PostgreSQL Database.
+
+1. Log in to your account
+2. Click *Create New Instance*
+3. Give the instance a name and select the plan of your choice, *Tiny Turtle* is the free plan.
+4. Click *Select Region* and choose a data center near you
+5. Click *Review* and if the details are correct click *Create instance*
+6. Click on the created instance and copy the database URL
+
+## **Heroku Setup**
+
+1. Log in to your [Heruko](https://www.heroku.com/) account
+2. On the dashboard click *New* - *Create new app*
+3. Give the app a unique name
+4. Select the region closest to you and click *Create app*
+5. Select your created app and open the *Settings* tab 
+6. At the *Config Vars* section click *Reveal Config Vars* and add the following:
+   - **DATABASE_URL** with the copied URL from ElephantSQL
+   - **SECRET_KEY** with your secret key
+   - **PORT** with the value 8000
+   - **CLOUDINARY_URL** with the copied URL from Cloudinary
+   - **DISABLE_COLLECTSTATIC** with the value 1
+
+## **Final Changes**
+
+1. Add `ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]` in **settings.py**
+2. Create a **media**, **static** and **templates** directory and a **Procfile** file in the base directory
+3. Add `web gunicorn pipetracker.wsgi` to **Procfile**
+4. In your **Heroku app**: 
+   - Go to the *Deploy tab* and connect your GitHub repository
+   - Click on *Deploy Branch* at the bottom of the page
+
+## **Forking**
+
+Forking creates a copy of the project on GitHub. Follow these steps to fork this repository:
+1. Log in to your GitHub account and navigate to [the Cheesecake repository](https://github.com/Julia-Wagner/PipeTracker).
+2. Click the **Fork** button on the top right of the repository.
+3. You can now open the forked copy of this project as your own repository.
+4. Follow the above steps to work on the project.
+
+## **Packages**
+
+- [django-extensions](https://django-extensions.readthedocs.io/en/latest/) - collection of custom extensions for the Django Framework, used for generating the ERD.
+- [gunicorn](https://pypi.org/project/gunicorn/) - Python WSGI HTTP Server for UNIX.
+- [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter.
+- [whitenoise](https://pypi.org/project/whitenoise/) - static file serving for Python web apps.
+- [django-allauth](https://docs.allauth.org/en/latest/) - authentication, registration, account management.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - control the rendering behaviour of Django forms.
+
+
+# **Credits**
+
+Code Institue projects: 'Hello Django' and 'I think therefore I blog' has helped me a lot during the project planning for my websites design.
+Extra help I've used for this project, please see links below.
+
+### Code Used
+
+- [w3schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [CSS Media Queries](https://www.w3schools.com/css/css3_mediaqueries.asp)
+- [Grid-View](https://www.w3schools.com/css/css_rwd_grid.asp)
+- [emmet.io](https://docs.emmet.io/cheat-sheet/)
+- [Start Bootstrap](https://startbootstrap.com/theme/clean-blog)
+- [Django documentation](https://docs.djangoproject.com/en/3.2/)
+
+### Content
+
+- The code is mostly created by me and I was inspired by my friend business [Cheesecakedalata](https://www.instagram.com/cheesecakedalata/?hl=en).
+- The landing page image was generated on [Pixlr](https://pixlr.com/image-generator/).
+
+## **Acknowledgements**
+
+I would like to express my gratitude to my Code Institute mentor and the CI Tutor team,  for guidance and clear advice to build this project.
