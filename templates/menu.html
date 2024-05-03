@@ -10,125 +10,121 @@
             <h2 class="text-center mb-4">Menu</h2>
     
             <div class="menu-navigation text-center mb-4" aria-label="buttons for navigation">
-                <button onclick="scrollToCategory('cheesecakes')">Cheesecakes</button>
-                <button onclick="scrollToCategory('cakes')">Cakes</button>
-                <button onclick="scrollToCategory('drinks')">Drinks</button>
+                <button onclick="scrollToCategory('classic')">Classic</button>
+                <button onclick="scrollToCategory('exotic')">Exotic</button>
+                <button onclick="scrollToCategory('mini')">Mini</button>
             </div>
             <br>
-            <div class="menu-category" aria-labelledby="cheesecakes">            
-                <h4 class="category" id="cheesecakes">Cheesecakes</h4>
-                <h7>*Prices per slice</h7>               
+            <div class="menu-category" aria-labelledby="classic">            
+                <h4 class="category" id="classic">Classic</h4>
+                <p class="alert">*Prices per slice</p>               
                 <ul>
-                    
-                    <li class="menu-item" aria-label="butternut squash soup">
+                    <li class="menu-item" aria-label="new york style">
                         <div>
-                            <span>Forest Berry</span>
-                            <p class="menu-description">red fruit syrup with white wine, blackberries, strawberries, blueberries and raspberries.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€4.50">€4.50</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="spicy bean and corn salsa">
-                        <div>
-                            <span>Spicy Bean and Corn Salsa</span>
-                            <p class="menu-description">A zesty soup-inspired salsa with black beans, corn, tomatoes, and a kick of spice, served with tortilla chips.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€6.00">€6.00</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="chilled cucumber avocado soup">
-                        <div>
-                            <span>Chilled Cucumber Avocado Soup</span>
-                            <p class="menu-description">Refreshing cucumber and creamy avocado blended into a chilled soup, garnished with a touch of dill.</p>
+                            <span>New York Style</span>
+                            <p class="menu-description">Hearty soup with tender chicken, wild rice, and a medley of vegetables in a flavorful broth.</p>
                         </div>
                         <span class="menu-price" aria-label="€5.50">€5.50</span>
                     </li>
                     
-                    <li class="menu-item" aria-label="mushroom and barley stuffed phyllo cups">
+                    <li class="menu-item" aria-label="strawberry">
                         <div>
-                            <span>Mushroom and Barley Stuffed Phyllo Cups</span>
-                            <p class="menu-description">Mini phyllo cups filled with a savory mix of mushroom and barley soup, topped with a crispy layer.</p>
+                            <span>Strawberry</span>
+                            <p class="menu-description">Creamy cheesecake atop a golden graham cracker crust, crowned with a medley of fresh strawberries or a luscious strawberry compote. A classic dessert bursting with fruity sweetness.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€5.50">€5.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="chocolate">
+                        <div>
+                            <span>Chocolate</span>
+                            <p class="menu-description">Decadent layers of rich chocolate nestled between creamy cheesecake, atop a chocolate cookie crust. A luscious indulgence for chocolate aficionados.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€5.50">€5.50</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="lemon">
+                        <div>
+                            <span>Lemon</span>
+                            <p class="menu-description">Creamy cheesecake infused with zesty lemon flavor, nestled on a buttery graham cracker crust. A refreshing and indulgent delight perfect for citrus lovers.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€5.50">€5.50</span>
+                    </li>
+                                        
+                </ul>
+            </div>
+
+            <div class="menu-category" aria-labelledby="exotic">
+                <h4 class="category" id="exotic">Exotic</h4>
+                <ul>
+                    <li class="menu-item" aria-label="forest Berry">
+                        <div>
+                            <span>Forest Berry</span>
+                            <p class="menu-description">Red fruit and white wine syrup blackberries, strawberries, blueberries and raspberries.</p>
                         </div>
                         <span class="menu-price" aria-label="€7.00">€7.00</span>
                     </li>
                     
+                    <li class="menu-item" aria-label="turkish lemonade">
+                        <div>
+                            <span>Turkish lemonade</span>
+                            <p class="menu-description"> Tangy lemon-infused cheesecake nestled atop a buttery crust, finished with a luscious lemon curd glaze.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.00">€7.00</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="tiramisu">
+                        <div>
+                            <span>Tiramisu</span>
+                            <p class="menu-description">Delicate layers of espresso-soaked ladyfingers nestled within a rich cheesecake base, topped with a dusting of cocoa.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.00">€7.00</span>
+                    </li>
+                    
+                    <li class="menu-item" aria-label="matcha green tea">
+                        <div>
+                            <span>Matcha Green Tea</span>
+                            <p class="menu-description">Velvety smooth texture with a striking green hue, topped with a dusting of matcha powder.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.00">€7.00</span>
+                    </li>
+                    <li class="menu-item" aria-label="mango coconut">
+                        <div>
+                            <span>Mango Coconut</span>
+                            <p class="menu-description">Creamy coconut-infused cheesecake base topped with luscious mango puree, offering a perfect balance of sweet and tangy flavors.</p>
+                        </div>
+                        <span class="menu-price" aria-label="€7.00">€7.00</span>
+                    </li>                    
                 </ul>
             </div>
 
-            <div class="menu-category" aria-labelledby="cakes">
-                <h4 class="category" id="cakes">Main Courses</h4>
+            <div class="menu-category" aria-labelledby="mini">
+                <h4 class="category" id="mini">Mini</h4>
                 <ul>
                     
-                    <li class="menu-item" aria-label="chicken and wild rice soup">
+                    <li class="menu-item" aria-label="new york style">
                         <div>
-                            <span>Chicken and Wild Rice Soup</span>
-                            <p class="menu-description">Hearty soup with tender chicken, wild rice, and a medley of vegetables in a flavorful broth.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€9.50">€9.50</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="lentil and vegetable stew">
-                        <div>
-                            <span>Lentil and Vegetable Stew</span>
-                            <p class="menu-description">A robust stew featuring lentils, carrots, potatoes, and spinach in a spiced broth.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€8.50">€8.50</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="thai coconut curry noodle soup">
-                        <div>
-                            <span>Thai Coconut Curry Noodle Soup</span>
-                            <p class="menu-description">A fusion of Thai flavors with coconut milk, curry, rice noodles, and a variety of colorful vegetables.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€10.50">€10.50</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="seafood chowder">
-                        <div>
-                            <span>Seafood Chowder</span>
-                            <p class="menu-description">Rich and creamy chowder loaded with a mix of seafood, potatoes, and corn.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€12.00">€12.00</span>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            <div class="menu-category" aria-labelledby="drinks">
-                <h4 class="category" id="drinks">Desserts</h4>
-                <ul>
-                    
-                    <li class="menu-item" aria-label="citrus sorbet with mint syrup">
-                        <div>
-                            <span>Citrus Sorbet with Mint Syrup</span>
+                            <span>New York Style</span>
                             <p class="menu-description">Refreshing citrus sorbet drizzled with a homemade mint-infused syrup.</p>
                         </div>
-                        <span class="menu-price" aria-label="€4.00">€4.00</span>
+                        <span class="menu-price" aria-label="€6.00">€6.00</span>
                     </li>
                     
-                    <li class="menu-item" aria-label="berry gazpacho parfait">
+                    <li class="menu-item" aria-label="chocolate ">
                         <div>
-                            <span>Berry Gazpacho Parfait</span>
+                            <span>Chocolate </span>
                             <p class="menu-description">A sweet twist on the classic gazpacho, featuring layers of mixed berry puree and vanilla yogurt.</p>
                         </div>
-                        <span class="menu-price" aria-label="€6.50">€6.50</span>
+                        <span class="menu-price" aria-label="€6.00">€6.00</span>
                     </li>
                     
-                    <li class="menu-item" aria-label="pumpkin pie soup shooters">
+                    <li class="menu-item" aria-label="strawberry">
                         <div>
-                            <span>Pumpkin Pie Soup Shooters</span>
+                            <span>Strawberry</span>
                             <p class="menu-description">Creamy pumpkin soup with a touch of sweetness, served in small shooter glasses.</p>
                         </div>
-                        <span class="menu-price" aria-label="€5.00">€5.00</span>
-                    </li>
-                    
-                    <li class="menu-item" aria-label="chocolate mocha pudding cups">
-                        <div>
-                            <span>Chocolate Mocha Pudding Cups</span>
-                            <p class="menu-description">Silky chocolate-mocha pudding topped with whipped cream and chocolate shavings.</p>
-                        </div>
-                        <span class="menu-price" aria-label="€7.50">€7.50</span>
-                    </li>
+                        <span class="menu-price" aria-label="€6.00">€6.00</span>
+                    </li>                  
                 </ul>
             </div>
         </div>
