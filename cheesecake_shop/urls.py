@@ -20,14 +20,11 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("accounts/", include("allauth.urls")),
-    path('', include('booking.urls')),
-    #path('menu/', include('menu.urls', namespace='menu')),
-    path('reservation_booking/', include('booking.urls')),
-    #path('my-booking/', include('bookings.urls')),
-    path('summernote/', include('django_summernote.urls')),
+    
+      
 ]
 
  

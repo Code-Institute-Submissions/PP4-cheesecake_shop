@@ -5,10 +5,7 @@ from django.urls import reverse
 from .models import Booking
 from .forms import BookingForm
 
-def home_view(request):
-    """View returning the index page"""
-    return render(request, 'index.html')
-
+# Create your views here.
 
 @login_required
 def reservation_booking(request):
@@ -24,13 +21,11 @@ def reservation_booking(request):
             return redirect('booking_confirmation')
 
     context = {'form': booking_form}
-    return render(request, 'booking_form.html', context)
+    return render(request, 'reservation_booking/booking_form.html', context)
 
 
 def booking_confirmation(request):
     booking = Booking.objects.first()
     context = {'booking': booking}
     return render(request,
-                  'booking_confirmation.html', context)
-
-
+                  'reservation_booking/booking_confirmation.html', context)

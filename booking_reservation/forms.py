@@ -8,15 +8,15 @@ from datetime import time
 
 
 def validate_opening_hours(value):
-    opening_time = time(12, 0)
-    closing_time = time(22, 0)
+    opening_time = time(14, 0)
+    closing_time = time(23, 0)
     last_booking_time = closing_time.replace(hour=closing_time.hour-1,
                                              minute=0, second=0,
                                              microsecond=0)
 
     if not (opening_time <= value <= closing_time):
         raise forms.ValidationError("Please select a time within "
-                                    "opening hours (12pm - 11pm).")
+                                    "opening hours (2pm - 11pm).")
     elif value > last_booking_time:
         raise forms.ValidationError("Sorry, the last online booking "
                                     "can be made at most 2 hours before "

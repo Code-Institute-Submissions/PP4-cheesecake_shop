@@ -61,18 +61,16 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
 
     'shop',
-    'booking',
+    'booking_reservation',    
+    'bookings',
+    
+    
 ]
 
 
-# allauth
+
 SITE_ID = 1
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"
-ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-ACCOUNT_USERNAME_MIN_LENGTH = 5
-LOGIN_URL = "/"
+
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 
