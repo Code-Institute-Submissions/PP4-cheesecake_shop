@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}- Bookings{% endblock %}
+{% block content %}
+
+<div class="container bookings">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 p-4">
+            <h1>My Bookings</h1>
+
+            {% if bookings %}
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nr. of Guests</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Contact</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for booking in bookings %}
+                        <tr>
+                            <td>{{ booking.number_of_guests }} pers.</td>
+                            <td>{{ booking.name }}</td>
+                            <td>{{ booking.reservation_date }}</td>
+                            <td>{{ booking.reservation_time }}</td>
+                            <td>({{ booking.phone }})</td>
+                            <td>({{ booking.status }})</td>
+                            <td>
+                                <a href="{% url 'booking_edit' pk=booking.pk %}">Edit</a> |
+                                <a class="a-delete" href="{% url 'booking_delete' pk=booking.pk %}">Delete</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p>You haven't made any bookings yet.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
