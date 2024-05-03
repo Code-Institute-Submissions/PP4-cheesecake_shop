@@ -427,6 +427,6 @@ Extra help I've used for this project, please see links below.
 - The code is mostly created by me and I was inspired by my friend business [Cheesecakedalata](https://www.instagram.com/cheesecakedalata/?hl=en).
 - The landing page image was generated on [Pixlr](https://pixlr.com/image-generator/).
 
-## **Acknowledgements**
+# **Acknowledgements**
 
 I would like to express my gratitude to my Code Institute mentor and the CI Tutor team,  for guidance and clear advice to build this project.
