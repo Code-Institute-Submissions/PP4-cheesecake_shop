@@ -1,14 +1,28 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block extra_title %}- Booking confirmation{% endblock %}
 {% block content %}
-<div class="container background-image">
-    <div class="confirmation col-md-3 mx-auto mt-3">
-        <h4>Booking Confirmation</h4>
-        <p>Thank you for booking with us. Your reservation is confirmed.</p>
-        <p>What would you like to do next?</p>
-        <br>
-        <p><strong><a class="link" href="{% url 'menu' %}">Check the Menu</a></strong></p>
-        <p><strong><a class="link" href="{% url 'bookings_list' %}">See Your Bookings</a></strong></p>        
+
+<div class="section">
+    <div class="container confirmation">
+        <div class="row justify-content-center m-2">
+            <div class="col-md-8 text-center">
+                <h2 class="confirmation-title">Booking Confirmation</h2>
+                <p class="p-text">Thank you for your booking!</p>
+                <hr>
+                <p>Name: {{ booking.name }}</p>
+                <p>Email: {{ booking.email }}</p>
+                <p>Phone: {{ booking.phone }}</p>
+                <p>Number of people: {{ booking.number_of_guests }}</p>
+                <p>Date: {{ booking.reservation_date }}</p>
+                <p>Time: {{ booking.reservation_time }}</p>
+                {% if booking.notes %}
+                <p>Notes: {{ booking.notes }}</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </div>
+
 {% endblock %}

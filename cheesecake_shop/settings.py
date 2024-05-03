@@ -29,9 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG") == "True"
+DEBUG = "True"
 
-ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu112.gitpod.io',
+ALLOWED_HOSTS = ['8000-edsonsmarti-pp4cheeseca-pv4kwpr308u.ws-eu110.gitpod.io',
                 '.herokuapp.com', "localhost"]
 
 
@@ -50,14 +50,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    
+    'django_summernote',
     'crispy_forms',
     'crispy_bootstrap5',
 
-    #apps
     'booking',
 ]
 
