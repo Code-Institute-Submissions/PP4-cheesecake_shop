@@ -12,7 +12,7 @@ def booking_list(request):
     else:
         bookings = Booking.objects.filter(user=request.user)
     context = {'bookings': bookings}
-    return render(request, 'Bookings/booking_list.html', context)
+    return render(request, 'booking_list.html', context)
 
 
 @login_required
@@ -28,7 +28,7 @@ def booking_edit(request, pk):
     else:
         form = BookingForm(instance=booking)
     context = {'form': form}
-    return render(request, 'Bookings/booking_edit.html', context)
+    return render(request, 'booking_edit.html', context)
 
 
 @login_required
@@ -40,4 +40,4 @@ def booking_delete(request, pk):
         messages.success(request, 'Booking successfully deleted!')
         return redirect('booking_list')
     context = {'booking': booking}
-    return render(request, 'Bookings/booking_delete.html', context)
+    return render(request, 'booking_delete.html', context)

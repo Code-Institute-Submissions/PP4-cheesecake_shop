@@ -21,11 +21,10 @@ def reservation_booking(request):
             return redirect('booking_confirmation')
 
     context = {'form': booking_form}
-    return render(request, 'reservation_booking/booking_form.html', context)
+    return render(request, 'booking_form.html', context)
 
 
 def booking_confirmation(request):
     booking = Booking.objects.first()
     context = {'booking': booking}
-    return render(request,
-                  'reservation_booking/booking_confirmation.html', context)
+    return render(request,'booking_confirmation.html', context)
