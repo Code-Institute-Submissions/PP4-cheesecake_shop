@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}- Edit booking{% endblock %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container edit-form">
+    <div class="row">
+        <div class="col-12">
+            <h1>Edit Booking</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="btns text-center">
+                    <input class="btn edit-btn" type="submit" value="Update">
+                    <a class="btn edit-cancel-btn" href="{% url 'booking_list' %}">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
